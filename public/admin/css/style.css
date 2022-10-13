@@ -1,0 +1,12 @@
+*{
+
+}
+
+.bg-primary{
+    background-color: #DA0071 !important;
+}
+.img-responsive{
+    max-width: 100%;
+    display: block;
+}
+

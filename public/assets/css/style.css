@@ -1,0 +1,205 @@
+/* ======  Google Font Import - Poforsins ==== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* *{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+} */
+
+.login-center{
+	height: 85vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #E6E6E6;
+}
+
+.register-center{
+    padding-top: 75px;
+    height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #E6E6E6;
+}
+
+.container-login{
+	position: relative;
+	max-width: 430px;
+	width: 100%;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.container-register{
+	position: relative;
+	max-width: 360px;
+	width: 100%;
+	background: #fff;
+	border-radius: 10px;
+	box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+.container-login .forms{
+	display: flex;
+	align-items: center;
+	height: 440px;
+	width: 200%;
+	transition: height 0.2s ease;
+}
+
+.container-register .forms{
+	display: flex;
+	align-items: center;
+	/*height: 680px;*/
+	width: 200%;
+	transition: height 0.2s ease;
+}
+
+.container-login .form{
+	width: 100%;
+	padding: 40px;
+	background-color: #fff;
+	transition: margin-left 0.18s ease
+}
+
+.container-register .form{
+	width: 100%;
+	padding: 30px;
+	background-color: #fff;
+	transition: margin-left 0.18s ease
+}
+
+.container-login .form .title-lg{
+    color: #333;
+	position: relative;
+	font-size: 27px;
+	font-weight: 600;
+}
+
+.container-register .form .title-lg{
+	position: relative;
+	font-size: 1.3rem;
+	font-weight: 600;
+}
+
+.form .title-lg::before{
+	content: '';
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	height: 3px;
+	width: 30px;
+	background-color: #DA0071;
+	border-radius: 25px;
+}
+
+.form .input-field{
+	position: relative;
+	height: 36px;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.input-field input, .button-cmp{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	padding: 0 35px;
+	border: none;
+	outline: none;
+	font-size: 16px;
+	border-bottom: 2px solid #ccc;
+	border-top: 2px solid transparent;
+	transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid){
+	border-bottom-color: #DA0071;
+}
+
+.input-field i{
+	position: absolute;
+	top: 50%;
+	/*left: 0;*/
+	transform: translateY(-50%);
+	color: #999;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+	color: #DA0071;
+}
+
+.input-field i.icon{
+	left: 0;
+}
+
+.input-field i.showHidePw{
+	right: 0;
+	cursor: pointer;
+	padding: 10px;
+}
+
+.form .checkbox-text{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+.checkbox-text .checkbox-content{
+	display: flex;
+	align-items: center;
+}
+
+.checkbox-content input{
+	margin: 0 8px -2px 4px !important;
+	accent-color: #DA0071 !important;
+}
+
+.form .text{
+	color: #333;
+	font-size: 14px;
+}
+
+.form a.text{
+	color: #DA0071;
+	text-decoration: none;
+}
+
+.form a:hover{
+	text-decoration: underline;
+}
+
+.form .button{
+	margin-top: 35px;
+}
+
+.form .button button{
+	border: none;
+	color: #fff;
+	font-size: 17px;
+	font-weight: 500;
+	letter-spacing: 1px;
+	background-color: #DA0071;
+	cursor: pointer;
+	border-radius: 10px;
+	transition: all 0.3s ease;
+}
+
+.button button:hover{
+	background-color: #99004F;
+}
+
+.form .login-signup{
+	margin-top: 30px;
+	text-align: center;
+}
+
+::placeholder{
+	color: #d2d9e1;
+}
